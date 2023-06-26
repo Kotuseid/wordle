@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <dialog id="end">
+        
+        <h1 id="displayState">YOU </h1>
+        <p id="displayTarget">The word was: </p>
+        <div class="button" onclick="location.reload();">Play Again</div>
+        <div class="button" onclick="endScreen.close(); document.title += ' | Reload to play again.'">Close</div>
+    </dialog>
+
+
+    <h1>
+        <span style="font-family: cursive !important;">W</span>
+        <span style="font-family: fantasy !important;">O</span>
+        <span style="font-family: serif !important;">R</span>
+        <span style="font-family: sans-serif !important;">D</span>
+        <span style="font-family: monospace !important;">L</span>
+        <span style="font-family: 'Brush Script MT' !important;">E</span>
+    </h1>
+
+    <div class="main">
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+        <div class="word">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+            <input type="text" maxlength="1" spellcheck="false" class="letter">
+        </div>
+    </div>
+
+
+    <div class="keyboard">
+        <div class="row">
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+        </div>
+        <div class="row">
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+        </div>
+        <div class="row">
+            <div class="key">ENTER</div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key"><svg xmlns="http://www.w3.org/2000/svg" width="50px"viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                        d="M16 9L13.0001 11.9999M13.0001 11.9999L10 15M13.0001 11.9999L10.0002 9M13.0001 11.9999L16.0002 15M8 6H19C19.5523 6 20 6.44772 20 7V17C20 17.5523 19.5523 18 19 18H8L2 12L8 6Z"
+                        stroke="#3a3a3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
