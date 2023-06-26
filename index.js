@@ -1,4 +1,4 @@
-let wordlist;
+let hardwordlist, simplewordlist;
 let target;
 const endScreen = document.getElementById("end");
 const validCharacters = "abcdefghijklmnopqrstuvwxyz";
@@ -6,12 +6,16 @@ let words = [];
 let currentLetter = [0, 0];
 let playing = true;
 
-fetch('./wordlist.json')
+fetch('./hardwordlist.json')
     .then((response) => response.json())
     .then((json) => {
-        wordList = json;
-        target = wordList[Math.floor(Math.random() * wordList.length)];
-        // target = "plant";
+        hardwordlist = json;
+    });
+fetch('./simplewordlist.json')
+    .then((response) => response.json())
+    .then((json) => {
+        simplewordlist = json;
+        target = simplewordlist[Math.floor(Math.random() * simplewordlist.length)];
         console.log(target);
         document.getElementById("displayTarget").innerText += target.toUpperCase();
     });
@@ -116,7 +120,7 @@ words[0][0].focus();
 function checkAttempt(i, j) {
     let word = words[i][0].value.toLowerCase() + words[i][1].value.toLowerCase() + words[i][2].value.toLowerCase() + words[i][3].value.toLowerCase() + words[i][4].value.toLowerCase();
 
-    if (wordList.includes(word)) {
+    if (hardwordlist.includes(word)) {
         words[i][j].disabled = true;
         if (i != 5) {
             words[i + 1][0].disabled = false;
