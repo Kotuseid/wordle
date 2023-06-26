@@ -1,6 +1,6 @@
 # wordle
 I created this after wondering if I was able to program this myself since I saw everyone around me playing it. It works at a sufficient level for my expectations.
-
+***
 ### To do
 * Make better alerts for when a word is not in the list
 * Add a win distribution table
