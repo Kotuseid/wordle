@@ -8,3 +8,4 @@ I created this after wondering if I was able to program this myself since I saw 
 * Add a button for playing again if user closes the win/lose screen
 * Make it run faster
 * Maybe sound effects
+* Check if it actually runs well in mobile and tablet devices and make it a responsive design
